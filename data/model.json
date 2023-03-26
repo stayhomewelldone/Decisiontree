@@ -1,0 +1,1 @@
+{"name":"Glucose >= 128 ?","children":[{"name":"yes","children":[{"name":"bmi >= 30 ?","children":[{"name":"yes","children":[{"name":"Glucose >= 156 ?","children":[{"name":"yes","children":[{"name":"1"}]},{"name":"no","children":[{"name":"1"}]}]}]},{"name":"no","children":[{"name":"0"}]}]}]},{"name":"no","children":[{"name":"0"}]}]}
