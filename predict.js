@@ -1,5 +1,5 @@
 import { DecisionTree } from "./libraries/decisiontree.js";
-import { VegaTree } from "./libraries/vegatree.js";
+// import { VegaTree } from "./libraries/vegatree.js";
 
 let predictedHtml = document.getElementById("predict");
 const form = document.getElementById("myForm");
