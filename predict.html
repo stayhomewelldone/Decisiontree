@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="predict.js" type="module"></script>
+    <title>Decision Tree Inleveropdracht</title>
+  </head>
+
+  <body>
+    <div class="user">
+      <header class="user__header">
+        <img
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg"
+          alt=""
+        />
+        <h1 class="user__title">Check if you are healthy</h1>
+      </header>
+      <h1>Healthy:<span id="predict"></span></h1>
+
+      <form id="myForm" class="form">
+        <div class="form__group">
+          <label for="pregnant">pregnant:</label>
+          <input type="" class="form__input" id="pregnant" name="pregnant" />
+        </div>
+        <br />
+
+        <div class="form__group">
+          <label for="glucose">glucose:</label>
+          <input
+            type="number"
+            class="form__input"
+            id="glucose"
+            name="glucose"
+          />
+        </div>
+        <br />
+
+        <div class="form__group">
+          <label for="bp">bp:</label>
+          <input type="number" class="form__input" id="bp" name="bp" />
+        </div>
+        <br />
+
+        <div class="form__group">
+          <label for="skin">skin:</label>
+          <input type="number" class="form__input" id="skin" name="skin" />
+        </div>
+        <br />
+
+        <div class="form__group">
+          <label for="insulin">insulin:</label>
+          <input
+            type="number"
+            class="form__input"
+            id="insulin"
+            name="insulin"
+          />
+        </div>
+
+        <br />
+
+        <div class="form__group">
+          <label for="bmi">bmi:</label>
+          <input
+            type="number"
+            step="0.001"
+            class="form__input"
+            id="bmi"
+            name="bmi"
+          />
+        </div>
+        <br />
+
+        <div class="form__group">
+          <label for="pedigree">pedigree:</label>
+          <input
+            type="number"
+            step="0.001"
+            class="form__input"
+            id="pedigree"
+            name="pedigree"
+          />
+        </div>
+        <br />
+
+        <div class="form__group">
+          <label for="age">age:</label>
+          <input type="number" id="age" class="form__input" name="age" />
+        </div>
+        <br />
+        <button class="btn" type="submit" value="Submit">
+          Check your health!
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
