@@ -34,8 +34,8 @@ form.addEventListener("submit", function (event) {
   let prediction = decisionTree.predict(diabetes);
   console.log("predicted " + prediction);
   prediction == 1
-    ? (predictedHtml.textContent += "YES")
-    : (predictedHtml.textContent += "NO");
+    ? (predictedHtml.textContent += "YES") && alert("Congratulations, you're healthy!")
+    : (predictedHtml.textContent += "NO") && alert("Oh, Make an appointment with your doctor");
 });
 // laad csv data als json
 //
